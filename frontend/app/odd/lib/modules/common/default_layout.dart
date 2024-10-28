@@ -13,7 +13,9 @@ class DefaultLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
-      body: child,
+      body: SingleChildScrollView(
+        child: child,
+      ),
     );
   }
 }

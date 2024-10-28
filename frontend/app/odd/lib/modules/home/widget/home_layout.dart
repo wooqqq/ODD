@@ -13,7 +13,9 @@ class HomeLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: child,
+      body: SingleChildScrollView(
+        child: child,
+      ),
     );
   }
 }
