@@ -1,21 +1,3 @@
-import 'package:flutter/material.dart';
-import 'modules/home/screen/home_screen.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        fontFamily: 'Freesentation'
-      ),
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2115caff04c827a91f743539817e7f73e15b18fc98c4c36ef00ba8537119e25c
+size 651
