@@ -1,10 +1,3 @@
-import 'package:flutter/material.dart';
-
-class PlatformContent extends StatelessWidget {
-  const PlatformContent({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text('GS25');
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a07e7992da7f97230b8726ac1cb2c329be06520fe3126f8cd554ecb1cc8d58e
+size 4857

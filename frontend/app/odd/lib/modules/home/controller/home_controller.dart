@@ -1,11 +1,3 @@
-import 'package:get/get.dart';
-
-class HomeController extends GetxController {
-  // 선택된 플랫폼을 저장
-  var selectedPlatform = '우리동네단골'.obs;
-
-  // 플랫폼 변경 메서드
-  void changePlatform(String platform) {
-    selectedPlatform.value = platform;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d40ddddcd185a032612c5fd4d7ebc2ca3e4095e3561af46dfde9d16bb7e645b
+size 1090
