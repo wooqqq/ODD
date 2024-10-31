@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../constants/appcolors.dart';
+import '../../constants/appcolors.dart';
 
 class HomeLayout extends StatelessWidget {
   final Widget child;
@@ -13,8 +13,11 @@ class HomeLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: SingleChildScrollView(
-        child: child,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          child: child,
+        ),
       ),
     );
   }
