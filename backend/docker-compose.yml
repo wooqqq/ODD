@@ -3,7 +3,7 @@ version: '3.8'
 services:
   spring:
     container_name: spring-client
-    image: spring
+    image: spring-client
     environment:
       - TZ=Asia/Seoul
     privileged: true
