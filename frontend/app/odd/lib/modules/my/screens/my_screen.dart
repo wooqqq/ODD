@@ -2,15 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:odd/modules/common/default_layout.dart';
 
 class MyScreen extends StatelessWidget {
-  MyScreen({
-    Key? key
-  }) : super(key: key);
-
+  const MyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultLayout(child:
-      Text('my screen')
-    );
+    return const DefaultLayout(child: Text('마이페이지'));
   }
 }
