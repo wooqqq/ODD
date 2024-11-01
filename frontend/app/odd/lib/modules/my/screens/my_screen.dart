@@ -1,11 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:odd/modules/common/default_layout.dart';
-
-class MyScreen extends StatelessWidget {
-  const MyScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const DefaultLayout(child: Text('마이페이지'));
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2795e6606c820ef7de0924d15686ffbe6557f838a43f7c6e3de9893133a7678a
+size 5378
