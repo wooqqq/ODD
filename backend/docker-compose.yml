@@ -6,9 +6,9 @@ services:
     image: spring-client
     environment:
       - TZ=Asia/Seoul
-      - MYSQL_URL: ${MYSQL_URL}
-      - MYSQL_USERNAME: ${MYSQL_USERNAME}
-      - MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      - MYSQL_URL= ${MYSQL_URL}
+      - MYSQL_USERNAME= ${MYSQL_USERNAME}
+      - MYSQL_PASSWORD= ${MYSQL_PASSWORD}
     privileged: true
     networks:
       - odd
