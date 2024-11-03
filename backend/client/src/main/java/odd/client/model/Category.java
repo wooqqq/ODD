@@ -1,19 +1,10 @@
 package odd.client.model;
 
-import lombok.*;
-import jakarta.persistence.*;
-
-@Getter
-@Setter
-@Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-public class Category {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(unique = true, nullable = false)
-    private String name;
+public enum Category {
+    GENERAL_FOOD, BEVERAGE, SNACKS,
+    MEAT, VEGETABLE, DAIRY,
+    DAILY_NECESSITIES, ICE_CREAM,
+    REFRIGERATED_FOOD, SEAFOOD,
+    PREPARED_FOOD, MEAL_KITS, FRESH_FOOD,
+    ALCOHOLIC_BEVERAGES, CONVENIENCE_FOOD, BEAUTY
 }
