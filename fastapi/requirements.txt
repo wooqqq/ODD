@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+databases[postgresql]  # PostgreSQL을 사용할 경우
+psycopg2-binary        # PostgreSQL 드라이버
+# 또는
+# aiomysql             # MySQL 드라이버
+python-dotenv          # .env 파일 관리를 원할 경우
+jinja2                 # 템플릿 렌더링 필요 시
+passlib[bcrypt]        # 암호 해싱
+pytest                 # 테스트 도구
+httpx                  # 비동기 HTTP 클라이언트
