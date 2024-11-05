@@ -6,7 +6,12 @@
   left: 250px;
   top: 0;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
+  padding-left: 30px;
+}
+
+.header-title {
+  font-weight: lighter;
 }
