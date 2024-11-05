@@ -1,28 +1,3 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
-import Login from "./pages/Admin/Login";
-import UserTotal from "./pages/Dashboard/UserTotal";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Navigate to="/login" replace />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/user/total",
-    element: <UserTotal />,
-  },
-]);
-
-function App() {
-  return <RouterProvider router={router} />;
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1185bb6343f44b57c8d215f839c074547fc57da5ed5ac56c08f44137c4a38863
+size 980
