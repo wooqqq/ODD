@@ -14,7 +14,7 @@ public class ItemResponseDTO {
     private Long Id;
     private String productName;
     private List<String> platform;
-    private List<String> orderType;
+    private List<String> serviceType;
     private int price;
     private String s3url;
 }
