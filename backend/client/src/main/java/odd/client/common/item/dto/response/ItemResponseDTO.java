@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acd18629e9bab239e5f8459edd475253407c05b1292e696ab0bd76903dde7f65
-size 531
+package odd.client.common.item.dto.response;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
+import odd.client.common.item.entity.Platform;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Schema(description = "Item 응답 DTO")
+public class ItemResponseDTO {
+
+    private Long Id;
+    private String productName;
+    private List<Platform> platform;
+    private List<String> orderType;
+    private int price;
+    private String s3url;
+}
