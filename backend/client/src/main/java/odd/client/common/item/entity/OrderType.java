@@ -1,4 +1,4 @@
-package odd.client.model;
+package odd.client.common.item.entity;
 
 public enum OrderType {
     배달,
