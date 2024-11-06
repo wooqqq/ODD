@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  react:
+    container_name: react-web
+    image: react-web
+    environment:
+      - TZ=Asia/Seoul
+    networks:
+      - odd
+
+networks:
+  odd:
+    external: true
