@@ -17,6 +17,6 @@ public class ItemResponseDTO {
     private String productName;
     private List<Platform> platform;
     private List<OrderType> orderType;
-    private double price;
+    private int price;
     private String s3url;
 }
