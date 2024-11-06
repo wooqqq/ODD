@@ -1,4 +1,4 @@
-package odd.client.dto;
+package odd.client.common.user.dto.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;

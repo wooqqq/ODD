@@ -1,4 +1,4 @@
-package odd.client.dto;
+package odd.client.common.user.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
