@@ -7,6 +7,9 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultLayout(child: SearchBackBar());
+    return const DefaultLayout(
+      header: SearchBackBar(),
+      child: SizedBox.shrink(),
+    );
   }
 }
