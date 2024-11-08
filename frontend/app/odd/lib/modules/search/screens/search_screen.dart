@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:odd/modules/common/default_layout.dart';
-import 'package:odd/modules/search/widgets/searchbackbar.dart';
+import 'package:odd/modules/search/widgets/search_header.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -8,7 +8,7 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const DefaultLayout(
-      header: SearchBackBar(),
+      header: SearchHeader(),
       child: SizedBox.shrink(),
     );
   }
