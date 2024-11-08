@@ -10,7 +10,7 @@ class Middle {
   factory Middle.fromJson(Map<String, dynamic> json) {
     return Middle(
       middle: json['middle'] as String,
-      s3Url: json['s3Url'] as String,
+      s3Url: json['s3url'] as String,
     );
   }
 }
