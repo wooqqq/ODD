@@ -5,9 +5,9 @@ class ItemService {
   final ItemApi _itemApi = ItemApi();
 
   // 상품 디테일
-  Future<Item?> getItemDetail(int itemId) async {
+  Future<Item?> getItemDetail(int itemId, String platform) async {
     try {
-      final json = await _itemApi.fetchItemDetail(itemId);
+      final json = await _itemApi.fetchItemDetail(itemId, platform);
       if (json != null) {
         return Item.fromJson(json);
       }
