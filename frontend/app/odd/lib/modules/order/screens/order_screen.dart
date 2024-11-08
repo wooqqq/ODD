@@ -1,17 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:odd/modules/common/default_layout.dart';
-
-class OrderScreen extends StatelessWidget {
-  OrderScreen({
-    Key? key
-  }) : super(key: key);
-
-
-  @override
-  Widget build(BuildContext context) {
-    return const DefaultLayout(
-      child:
-        Text('order screen')
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2536919d7dcc663e4d25614ee593e5b785eb46d9e54f9c0e3ae3d15fb937a430
+size 768
