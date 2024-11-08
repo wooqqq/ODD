@@ -1,6 +1,6 @@
-package odd.client.common.point.model.repository;
+package odd.client.common.point.repository;
 
-import odd.client.common.point.entity.UserPoint;
+import odd.client.common.point.model.UserPoint;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

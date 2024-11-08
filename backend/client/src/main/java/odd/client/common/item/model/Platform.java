@@ -1,4 +1,4 @@
-package odd.client.common.item.entity;
+package odd.client.common.item.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

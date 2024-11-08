@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CategoryResponseDTO {
-    private String categoryName;
-    private String s3Url;
+public class SubCategoryResponseDTO {
+    private String sub;
 }
+
+

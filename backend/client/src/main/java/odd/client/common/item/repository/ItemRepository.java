@@ -1,6 +1,6 @@
-package odd.client.common.item.model.repository;
+package odd.client.common.item.repository;
 
-import odd.client.common.item.entity.Item;
+import odd.client.common.item.model.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
