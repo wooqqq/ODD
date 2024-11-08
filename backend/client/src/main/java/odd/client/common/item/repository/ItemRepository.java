@@ -1,13 +1,3 @@
-package odd.client.common.item.repository;
-
-import odd.client.common.item.model.Item;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-import java.util.Optional;
-
-public interface ItemRepository extends JpaRepository<Item, Long> {
-    Optional<Item> findById(Long id);
-    List<Item> findByBdItemLclsNm(String bdItemLclsNm);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e70c73504f007cc74adc32f1d7bf47b2d4888a57bee8da0f32f3ffc964d04247
+size 1342

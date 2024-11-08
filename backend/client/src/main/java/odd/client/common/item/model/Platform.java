@@ -1,16 +1,3 @@
-package odd.client.common.item.model;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-@AllArgsConstructor
-public enum Platform {
-    GS25("GS25"),
-    GSFRESH("GS더프레시"),
-    WINE25("WINE25")
-    ;
-
-    private String description;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f274ced4736c1c6bd8789dc21a767471dbc0c1d617f5cfcbcc6fe6eb9ae4019a
+size 828
