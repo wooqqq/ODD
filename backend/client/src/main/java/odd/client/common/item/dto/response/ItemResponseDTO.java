@@ -1,9 +1,10 @@
 package odd.client.common.item.dto.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.*;
-
 import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
@@ -13,7 +14,7 @@ public class ItemResponseDTO {
 
     private Long Id;
     private String productName;
-    private List<String> platform;
+    private String platform;
     private List<String> serviceType;
     private int price;
     private String s3url;
