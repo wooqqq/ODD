@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 @Schema(description = "Item 응답 DTO")
 public class ItemResponseDTO {
 
-    private Long Id;
-    private String productName;
+    private Long itemId;
+    private String ItemName;
     private String platform;
     private List<String> serviceType;
     private int price;

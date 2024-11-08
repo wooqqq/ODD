@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class MiddleCategoryResponseDTO {
     private String middle;
-    private String s3Url;
+    private String s3url;
 }
