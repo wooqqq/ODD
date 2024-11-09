@@ -1,10 +1,16 @@
 import React from "react";
+import Card from "../../components/Dashboard/Card";
 
 const User = () => {
   return (
     <>
       <div className="user">
-        <h2>User</h2>
+        <Card>
+          <h2>hi</h2>
+        </Card>
+        <Card>
+          <h2>hi</h2>
+        </Card>
       </div>
     </>
   );
