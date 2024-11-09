@@ -1,4 +1,4 @@
-package com.example.odd
+package com.dangoal25.odd
 
 import io.flutter.embedding.android.FlutterActivity
 
