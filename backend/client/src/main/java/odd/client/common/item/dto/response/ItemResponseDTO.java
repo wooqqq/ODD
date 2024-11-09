@@ -1,21 +1,3 @@
-package odd.client.common.item.dto.response;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Schema(description = "Item 응답 DTO")
-public class ItemResponseDTO {
-
-    private Long itemId;
-    private String ItemName;
-    private String platform;
-    private List<String> serviceType;
-    private int price;
-    private String s3url;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24a56d8018d7a594674f5aadbae82686b314c513319f72d51714b6ff0827c9c4
+size 751
