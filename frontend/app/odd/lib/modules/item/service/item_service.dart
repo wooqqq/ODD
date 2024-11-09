@@ -1,19 +1,3 @@
-import '../models/item.dart';
-import '../../../apis/item_api.dart';
-
-class ItemService {
-  final ItemApi _itemApi = ItemApi();
-
-  // 상품 디테일
-  Future<Item?> getItemDetail(int itemId) async {
-    try {
-      final json = await _itemApi.fetchItemDetail(itemId);
-      if (json != null) {
-        return Item.fromJson(json);
-      }
-    } catch (e) {
-      print('ItemService 오류: $e');
-    }
-    return null;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cb466eaa2485175785667c845ddb4f2fc99156f13a184159129c6db8afd2117
+size 836
