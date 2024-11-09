@@ -1,4 +1,4 @@
-package odd.client.common.point.dto.request;
+package odd.client.common.purchase.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

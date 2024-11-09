@@ -1,4 +1,4 @@
-package odd.client.common.point.dto.request;
+package odd.client.common.purchase.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-class PurchaseItemDTO {
+public class PurchaseItemDTO {
     private Long id;
     private Integer count;
 }
