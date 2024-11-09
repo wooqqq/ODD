@@ -1,15 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:odd/modules/common/default_layout.dart';
-import 'package:odd/modules/search/widgets/search_header.dart';
-
-class SearchScreen extends StatelessWidget {
-  const SearchScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const DefaultLayout(
-      header: SearchHeader(),
-      child: SizedBox.shrink(),
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f14c7727590b0193f980b2e067fc57739d93ad7609f86c4f2d72c033bbf1e8d1
+size 3066
