@@ -1,13 +1,13 @@
 import React from "react";
 
-const UserTotal = () => {
+const Evaluation = () => {
   return (
     <>
       <div className="user">
-        <h2>UserTotal</h2>
+        <h2>Evaluation</h2>
       </div>
     </>
   );
 };
 
-export default UserTotal;
+export default Evaluation;
