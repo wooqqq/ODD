@@ -1,14 +1,3 @@
-//
-//  Generated file. Do not edit.
-//
-
-import FlutterMacOS
-import Foundation
-
-import path_provider_foundation
-import shared_preferences_foundation
-
-func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  PathProviderPlugin.register(with: registry.registrar(forPlugin: "PathProviderPlugin"))
-  SharedPreferencesPlugin.register(with: registry.registrar(forPlugin: "SharedPreferencesPlugin"))
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6702740f7a1151cae7ed0e4ad53f2d2e3e9f3a4d79d5af847443e78ddbd41611
+size 651
