@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5ec7aff42fdc88d4e39b045eafa6b132ed9382746cc4a83ea88e04fd20c74e1
-size 5643
+package odd.client.common.log.service;
+
+import odd.client.common.item.dto.request.CartRequestDTO;
+import odd.client.global.util.UserInfo;
+import org.springframework.stereotype.Service;
+
+@Service
+public class LogService {
+
+    public void addItemToCart(CartRequestDTO cartRequestDTO) {
+        System.out.println(UserInfo.getId());
+        System.out.println(cartRequestDTO);
+    }
+}
