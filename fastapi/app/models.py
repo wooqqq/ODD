@@ -1,13 +1,3 @@
-from sqlalchemy import Column, Integer, String, Date
-from .database import Base
-
-class User(Base):
-    __tablename__ = "user"
-
-    id = Column(Integer, primary_key=True, index=True)
-    email = Column(String(255), unique=True, index=True)
-    nickname = Column(String(255))
-    gender = Column(String(255))
-    birthday = Column(Date)
-    points = Column(Integer)
-    password = Column(String(255))
+version https://git-lfs.github.com/spec/v1
+oid sha256:74d81fa0e0324fa87e74722fb9188b15a85ed7f6d3cbba9e7077cd2130d4866a
+size 677
