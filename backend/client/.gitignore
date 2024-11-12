@@ -6,7 +6,7 @@ build/
 !**/src/test/**/build/
 
 ### Custom File ###
-resources/fcmmsg.json
+/src/main/resources/fcmmsg.json
 
 ### STS ###
 .apt_generated
