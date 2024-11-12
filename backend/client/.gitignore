@@ -5,6 +5,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### Custom File ###
+/src/main/resources/fcmmsg.json
+
 ### STS ###
 .apt_generated
 .classpath

@@ -1,20 +1,3 @@
-package odd.client.common.user.dto.request;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
-
-@Data
-@Schema(description = "로그인 요청 DTO")
-public class LoginRequestDTO {
-
-    @NotBlank
-    @Email
-    @Schema(description = "이메일")
-    private String email;
-
-    @NotBlank
-    @Schema(description = "비밀번호")
-    private String password;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:978ab2b0f52005e9b4388a46aad757c4a69d9bdee04ea168d339ad993e16e919
+size 556
