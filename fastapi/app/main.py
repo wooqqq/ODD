@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b11ceac5fc9a3eaeb65747a27ac94de19033e0d60da05e57ea6096d26d7f47f9
-size 1390
+from fastapi import FastAPI
+import uvicorn
+from app.routers import user_router, recommend_router
+
+app = FastAPI()
+
+# 라우터 등록
+app.include_router(user_router.router, prefix="/users", tags=["users"])
+app.include_router(recommend_router.router, prefix="/recommend", tags=["recommendations"])
+
+if __name__ == "__main__":
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
+
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
