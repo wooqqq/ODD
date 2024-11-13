@@ -1,9 +1,3 @@
-import pandas as pd
-from app.cassandra_database import get_cassandra_session, session
-
-session = get_cassandra_session()
-
-def load_data(table_name):
-    query = f"SELECT * FROM {table_name}"
-    rows = session.execute(query)
-    return pd.DataFrame(list(rows))
+version https://git-lfs.github.com/spec/v1
+oid sha256:e787ef1c231834b10a63be3cb45b51280f1c988cd2027e09f78c252b0f5c3f6b
+size 513
