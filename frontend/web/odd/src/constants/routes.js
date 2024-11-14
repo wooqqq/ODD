@@ -3,5 +3,5 @@ export const ROUTES = {
   DASHBOARD: "/dashboard",
   USER: "user",
   ITEM: "item",
-  EVALUTION: "evalution",
+  EVALUATION: "evaluation",
 };
