@@ -1,0 +1,9 @@
+.evaluation-container {
+  margin-top: 15px;
+  margin-left: 15px;
+
+}
+
+.evaluation-row {
+  display: flex;
+}
