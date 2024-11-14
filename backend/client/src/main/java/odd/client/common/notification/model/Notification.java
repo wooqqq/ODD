@@ -1,27 +1,3 @@
-package odd.client.common.notification.model;
-
-import jakarta.persistence.Id;
-import lombok.Builder;
-import lombok.Getter;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.time.LocalDateTime;
-
-@Getter
-@Builder
-@Document(collection = "notification")
-public class Notification {
-
-    @Id
-    private String id;
-
-    private Long userId;
-
-    private String itemId;
-
-    private String platform;
-
-    private String content;
-
-    private LocalDateTime date;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a297076cc5dc9aff1b5ddee9547356e3b76a37e11c83bb509979cd5ad982d80
+size 532
