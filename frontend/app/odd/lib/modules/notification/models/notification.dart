@@ -1,21 +1,3 @@
-class Notification {
-  final String platform;
-  final String content;
-  final String date;
-
-  Notification({
-    required this.platform,
-    required this.content,
-    required this.date,
-  });
-
-  // JSON 데이터 -> Notification 객체
-  factory Notification.fromJson(Map<String, dynamic> json) {
-    return Notification(
-      platform: json['platform'] as String,
-      content: json['content'] as String,
-      date: json['date'] as String,
-    );
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be7158174b0fca0865c8f1c16edf80c73cffecb568d491d951f0250feb4a5f14
+size 561
