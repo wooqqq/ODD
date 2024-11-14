@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Builder
 @Document(collection = "notification")
@@ -21,5 +23,5 @@ public class Notification {
 
     private String content;
 
-    private String date;
+    private LocalDateTime date;
 }
