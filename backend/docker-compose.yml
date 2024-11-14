@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  spring:
+  spring-client:
     container_name: spring-client
     image: spring-client
     environment:
@@ -9,6 +9,15 @@ services:
     privileged: true
     networks:
       - odd
+
+  # spring-manager:
+  #   container_name: spring-manager
+  #   image: spring-manager
+  #   environment:
+  #     - TZ=Asia/Seoul
+  #   privileged: true
+  #   networks:
+  #     - odd
 
 networks:
   odd:
