@@ -1,4 +1,4 @@
-package odd.manager.common.user.dto.response;
+package odd.manager.common.Evaluation.dto.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
