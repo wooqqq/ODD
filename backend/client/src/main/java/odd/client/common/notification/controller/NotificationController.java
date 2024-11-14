@@ -1,14 +1,3 @@
-package odd.client.common.notification.controller;
-
-import lombok.RequiredArgsConstructor;
-import odd.client.common.notification.service.NotificationService;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("/notification")
-@RequiredArgsConstructor
-public class NotificationController {
-
-    private final NotificationService notificationService;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:08bd06c492efa3b0293482407b218062e6e4ad25fadcb545d79864336dde8618
+size 929

@@ -13,6 +13,10 @@ public class Notification {
     @Id
     private String id;
 
+    private Long userId;
+
+    private String itemId;
+
     private String platform;
 
     private String content;
