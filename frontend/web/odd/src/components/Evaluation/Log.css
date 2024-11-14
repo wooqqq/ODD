@@ -1,0 +1,11 @@
+.purchase-table {
+  width: 100%; /* Card의 너비를 가득 채우도록 설정 */
+  border-collapse: collapse; /* 테이블 경계를 겹쳐 보이지 않게 설정 */
+}
+
+.purchase-table th,
+.purchase-table td {
+  padding: 10px; /* 셀 내부의 패딩 */
+  border-bottom: 1px solid #ddd; /* 각 행의 구분선 */
+  text-align: left;
+}

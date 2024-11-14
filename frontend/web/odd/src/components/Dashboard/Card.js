@@ -1,8 +1,8 @@
 import "./Card.css";
 
-const Card = ({ children, width, height }) => {
+const Card = ({ children, flexGrow = 1 }) => {
   return (
-    <div className="card" style={{ width: width, height: height }}>
+    <div className="card" style={{ flex: flexGrow }}>
       {children}
     </div>
   );
