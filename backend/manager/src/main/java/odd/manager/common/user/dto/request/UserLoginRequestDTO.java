@@ -1,4 +1,4 @@
-package odd.manager.common.Evaluation.dto.request;
+package odd.manager.common.user.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

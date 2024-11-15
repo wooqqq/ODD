@@ -1,4 +1,4 @@
-package odd.manager.common.user.dto.response;
+package odd.manager.common.evaluation.dto.response;
 
 import lombok.Data;
 
