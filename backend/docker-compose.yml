@@ -10,14 +10,14 @@ services:
     networks:
       - odd
 
-  # spring-manager:
-  #   container_name: spring-manager
-  #   image: spring-manager
-  #   environment:
-  #     - TZ=Asia/Seoul
-  #   privileged: true
-  #   networks:
-  #     - odd
+  spring-manager:
+    container_name: spring-manager
+    image: spring-manager
+    environment:
+      - TZ=Asia/Seoul
+    privileged: true
+    networks:
+      - odd
 
 networks:
   odd:
