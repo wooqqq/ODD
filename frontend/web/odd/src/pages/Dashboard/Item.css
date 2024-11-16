@@ -1,0 +1,8 @@
+.item-container {
+  margin: 15px;
+}
+
+.item-row {
+  display: flex;
+  min-height: 300px;
+}
