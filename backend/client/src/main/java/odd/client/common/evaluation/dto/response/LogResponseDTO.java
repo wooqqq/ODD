@@ -6,6 +6,7 @@ import lombok.Data;
 public class LogResponseDTO {
     private String id;
     private String itemName;
+    private String inter;
     private String date;
     private String servicetype;
 }
