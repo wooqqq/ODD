@@ -1,4 +1,4 @@
-package odd.client.common.evaluation.dto.response;
+package odd.manager.common.evaluation.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
