@@ -1,19 +1,3 @@
-import React from "react";
-import Card from "../../components/Dashboard/Card";
-
-const User = () => {
-  return (
-    <>
-      <div className="user">
-        <Card>
-          <h2>hi</h2>
-        </Card>
-        <Card>
-          <h2>hi</h2>
-        </Card>
-      </div>
-    </>
-  );
-};
-
-export default User;
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3e26ae297b7b6a247946344498961cede7767f2a84a2e26f8c30987218c03f0
+size 1059
