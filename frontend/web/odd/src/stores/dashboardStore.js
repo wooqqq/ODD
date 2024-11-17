@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9ec1daf9754e0bfa92c6adbbd631d76baff38d85602c4bb7a845dbc9db7aa0f
-size 1585
+import { create } from "zustand";
+
+const dashboardStore = create((set) => ({
+  selectedMenu: "사용자 정보",
+  selectedPlatform: "GS25",
+
+  changeMenu: (menu) =>
+    set((state) => ({
+      selectedMenu: menu,
+    })),
+  changePlatform: (platform) =>
+    set((state) => ({
+      selectedPlatform: platform,
+    })),
+}));
+
+export default dashboardStore;
