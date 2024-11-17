@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class GenderAgeGroupResponseDTO {
 
-    private AgeGroupResponseDTO F;
-    private AgeGroupResponseDTO M;
+    private AgeGroupResponseDTO female;
+    private AgeGroupResponseDTO male;
 }
