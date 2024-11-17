@@ -1,13 +1,13 @@
-package odd.client.common.dashboard.response;
+package odd.manager.common.dashobard.dto.response;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import odd.client.common.evaluation.dto.response.ItemResponseDTO;
+import odd.manager.common.evaluation.dto.response.ItemResponseDTO;
+import lombok.NoArgsConstructor;
 
 @Getter
-@SuperBuilder
 @NoArgsConstructor
+@SuperBuilder
 public class ItemResponseWithCountDTO extends ItemResponseDTO {
     private long count;
 }

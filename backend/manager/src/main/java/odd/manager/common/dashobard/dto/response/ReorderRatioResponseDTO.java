@@ -1,4 +1,4 @@
-package odd.client.common.dashboard.response;
+package odd.manager.common.dashobard.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
