@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const dashboardStore = create((set) => ({
-  selectedMenu: "사용자 정보",
+  selectedMenu: "대시보드",
   selectedPlatform: "GS25",
 
   changeMenu: (menu) =>

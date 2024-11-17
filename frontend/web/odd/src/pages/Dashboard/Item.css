@@ -1,8 +1,21 @@
 .item-container {
   margin: 15px;
+  height: 100%; /* 부모 높이 제한 */
+  display: flex;
+  flex-direction: column;
 }
 
 .item-row {
   display: flex;
-  min-height: 300px;
+  height: 400px; /* 고정 높이 */
+}
+
+.top-title {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.top-title h3 {
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
 }
