@@ -8,7 +8,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class RecommendItemResponseDTO {
+public class TimeRecommendItemResponseDTO {
 
     @JsonProperty("user_id")
     private String userId;
