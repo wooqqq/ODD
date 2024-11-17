@@ -6,14 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CategoryStatsResponseDTO {
     private String category;
     private long viewCount;
     private long cartCount;
-    private long purchaseCount;
-    private long repurchaseCount;
-    private double repurchaseRate;
+    private long orderCount;
+    private long reorderCount;
 }
