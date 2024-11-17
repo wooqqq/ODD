@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface GsUserRepository extends JpaRepository<GsUser, Long> {
-    Optional<GsUser> findByUserId(Long userId);
+    Optional<GsUser> findByUser_Id(Long userId);
     Optional<GsUser> findByGsUserId(String gsUserId);
 }
