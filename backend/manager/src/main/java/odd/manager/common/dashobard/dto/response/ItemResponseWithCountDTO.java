@@ -1,4 +1,4 @@
-package odd.manager.common.dashobard.response;
+package odd.manager.common.dashobard.dto.response;
 
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
