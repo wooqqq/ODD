@@ -1,4 +1,4 @@
-package odd.client.common.dashboard.response;
+package odd.client.common.dashboard.dto.response;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
