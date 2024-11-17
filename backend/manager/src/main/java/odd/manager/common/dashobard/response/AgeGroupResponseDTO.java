@@ -1,2 +1,23 @@
-package odd.manager.common.dashobard.response;public class AgeGroupResponseDTO {
+package odd.manager.common.dashobard.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class AgeGroupResponseDTO {
+    private int teens;
+
+    private int twenties;
+
+    private int thirties;
+
+    private int forties;
+
+    private int other;
+
 }

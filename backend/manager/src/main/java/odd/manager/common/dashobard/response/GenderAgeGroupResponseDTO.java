@@ -1,2 +1,16 @@
-package odd.manager.common.dashobard.response;public class GenderAgeGroupResponseDTO {
+package odd.manager.common.dashobard.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class GenderAgeGroupResponseDTO {
+
+    private AgeGroupResponseDTO female;
+    private AgeGroupResponseDTO male;
 }
