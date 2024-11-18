@@ -1,0 +1,6 @@
+fastapi==0.115.0
+uvicorn==0.22.0
+sqlalchemy==1.4.49
+databases[postgresql]==0.5.5
+psycopg2-binary==2.9.7
+# aiomysql==0.1.1  # MySQL

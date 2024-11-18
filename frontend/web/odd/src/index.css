@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Freesentation";
+  src: url("./assets/fonts/Freesentation-5Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dungguun";
+  src: url("./assets/fonts/Dunggeunmiso-B.ttf") format("truetype");
+}
+
+body {
+  font-family: "Freesentation";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

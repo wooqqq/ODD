@@ -1,0 +1,15 @@
+.user-container {
+  margin: 15px;
+}
+
+.user-row {
+  display: flex;
+  min-height: 300px;
+}
+
+.user-column {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+
+  flex-grow: 1;
+}

@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: var(--lightgrey); */
+}
+
+.main {
+  margin-left: 230px;
+  margin-top: 70px;
+  /* padding: 20px; */
+  width: calc(100%- 230px);
+  min-height: calc(100vh - 70px);
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: var(--background);
+  overflow: auto;
+}
