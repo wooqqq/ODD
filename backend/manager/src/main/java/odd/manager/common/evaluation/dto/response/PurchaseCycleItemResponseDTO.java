@@ -6,7 +6,7 @@ import java.util.List;
 
 @Data
 public class PurchaseCycleItemResponseDTO {
-    private String itemId;
+    private String id;
     private String itemName;
     private String recommendationDate;
     private List<String> purchaseDates;
