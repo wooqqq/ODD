@@ -1,0 +1,25 @@
+.evaluation-container {
+  margin: 15px;
+}
+
+.evaluation-row {
+  display: flex;
+}
+
+.evaluation-col {
+  display: flex;
+  flex-direction: column; /* 세로 방향 배치 */
+  flex: 2; /* 왼쪽 컬럼에 더 많은 공간 할당 */
+}
+
+.title-dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* 제목과 드롭다운 사이 간격 */
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
