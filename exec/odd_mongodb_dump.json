@@ -1,0 +1,14 @@
+[
+  {
+    "_id": {
+      "$oid": "{table_id}"
+    },
+    "userId": {
+      "$numberLong": "{user_id}"
+    },
+    "platform": "{platform_description}",
+    "content": "{notification_content}",
+    "date": "{notification_send_date}",
+    "_class": "odd.client.common.notification.model.Notification"
+  }, ...
+]
