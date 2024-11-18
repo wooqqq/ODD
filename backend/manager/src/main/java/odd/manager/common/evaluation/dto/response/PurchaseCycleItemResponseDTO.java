@@ -2,9 +2,12 @@ package odd.manager.common.evaluation.dto.response;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class PurchaseCycleItemResponseDTO {
-    private String id;
+    private String itemId;
     private String itemName;
-    private String logDate;
+    private String recommendationDate;
+    private List<String> purchaseDates;
 }
