@@ -15,5 +15,5 @@ public class ReorderRatioResponseDTO {
 
     private Long secondOrMore;
 
-    private float reorderRatio;
+    private String reorderRatio;
 }
