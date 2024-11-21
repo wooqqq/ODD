@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27a74dafdaddb6d6acab81b422074af160b81857a8617bc2b2d0700c1f6bb062
-size 584
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin: 8px 18px 5px 20px;
+}
+
+.info-content {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column; /* 텍스트를 세로로 쌓이도록 설정 */
+}
+
+.info-text span:first-child {
+  color: var(--darkgrey);
+  font-size: 18px;
+}
+
+.info-text span:last-child {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 3px; /* 약간의 간격을 추가 */
+}

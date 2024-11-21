@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f399dd549708ba5421acf2607fe22b674783b910e32ac177cb9830b3984bf2d5
-size 754
+package odd.client.global.util;
+
+import odd.client.global.security.CustomUserDetails;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+
+public class UserInfo {
+
+    private UserInfo() {
+    }
+
+    public static Long getId() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        if (authentication == null || !(authentication.getPrincipal() instanceof CustomUserDetails)) {
+            throw new IllegalStateException("Authentication information is not available");
+        }
+
+        CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
+        return userDetails.getUser().getId();
+    }
+
+}

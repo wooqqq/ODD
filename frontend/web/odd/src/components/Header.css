@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28ea871e44519897788ccf96f0daca6325b2be7c8b340863bbe8e6abadcfbb05
-size 799
+.header {
+  height: 70px;
+  width: calc(100% - 230px);
+  background-color: var(--white);
+  position: fixed;
+  left: 230px;
+  top: 0;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+  z-index: 1000;
+}
+
+.header-title {
+  font-weight: lighter;
+  width: 100px;
+}
+
+.header-buttons {
+  margin-left: 70px;
+}
+
+.header-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darkgrey);
+  margin: 10px;
+}
+
+.header-buttons button.active {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+  color: var(--darkgrey);
+  margin: 10px;
+}
+
+.header-search {
+  margin-left: 50px;
+}

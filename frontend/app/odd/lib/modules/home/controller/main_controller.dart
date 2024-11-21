@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7c08beaceaeeaebf469cfb06aa74e21be8f28b2ce6812a4e80c65620281e795
-size 954
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:odd/modules/home/screens/home_screen.dart';
+import 'package:odd/modules/my/screens/my_screen.dart';
+import 'package:odd/modules/search/screens/search_screen.dart';
+import 'package:odd/modules/order/screens/order_screen.dart';
+import 'package:odd/modules/pay/widgets/pay_modal.dart';
+
+class MainController extends GetxController {
+  RxInt selectedIndex = 0.obs;
+
+  List<Widget?> pages = [
+    HomeScreen(),
+    SearchScreen(),
+    null, // 결제 모달
+    OrderScreen(),
+    MyScreen(),
+  ];
+
+  void changeIndex(int index, BuildContext context) {
+    if (index == 2) {
+      showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return PayModal();
+        },
+      );
+    } else {
+      while (Navigator.of(context).canPop()) {
+        Navigator.of(context).pop();
+      }
+      selectedIndex.value = index;
+    }
+  }
+}

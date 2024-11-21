@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be7158174b0fca0865c8f1c16edf80c73cffecb568d491d951f0250feb4a5f14
-size 561
+class NotificationModel {
+  final String? itemId;
+  final String platform;
+  final String content;
+  final String date;
+
+  NotificationModel({
+    this.itemId,
+    required this.platform,
+    required this.content,
+    required this.date,
+  });
+
+  // JSON 데이터 -> Notification 객체
+  factory NotificationModel.fromJson(Map<String, dynamic> json) {
+    return NotificationModel(
+      itemId: json['itemId'] as String?,
+      platform: json['platform'] as String,
+      content: json['content'] as String,
+      date: json['date'] as String,
+    );
+  }
+}

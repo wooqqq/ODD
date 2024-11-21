@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c565fc8320c1e708c0369355186bdb23b44606d0bc36df786571e237ae741306
-size 865
+package odd.manager.common.user.service;
+
+import odd.manager.common.user.dto.request.UserLoginRequestDTO;
+import odd.manager.common.user.dto.response.UserLoginResponseDTO;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+    @Value("${admin.account.id}")
+    private String adminAccountId;
+
+    @Value("${admin.account.password}")
+    private String adminAccountPassword;
+
+    public UserLoginResponseDTO login(UserLoginRequestDTO requestDTO) {
+        if (!adminAccountId.equals(requestDTO.getId()) || !adminAccountPassword.equals(requestDTO.getPassword()))
+            return new UserLoginResponseDTO(false, "존재하지 않는 관리자 계정입니다.");
+
+        return new UserLoginResponseDTO(true, "관리자 계정 로그인에 성공했습니다.");
+    }
+}

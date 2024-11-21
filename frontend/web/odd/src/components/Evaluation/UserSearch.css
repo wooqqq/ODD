@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:296b8a993111cf8ebd769e11b07ad4b2212383eab84adce8824a0592d7227707
-size 1531
+.user-search {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: var(--background);
+  border-radius: 12px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #6c63ff; /* 아이콘 색상 */
+  margin-right: 8px;
+}
+
+.user-search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--darkgrey);
+  width: 100%;
+}
+
+.user-search-input::placeholder {
+  color: var(--middlegrey);
+}
+
+.search-button {
+  width: 60px;
+  padding: 8px;
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: var(--darknavy);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 350px;
+  height: 150px;
+}
+
+.modal p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: var(--darkgrey);
+}
+
+.modal .button {
+  width: 50%;
+  padding: 10px;
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .button:hover {
+  background-color: var(--darknavy);
+}
+
+.modal .button + .button {
+  margin-top: 20px;
+}

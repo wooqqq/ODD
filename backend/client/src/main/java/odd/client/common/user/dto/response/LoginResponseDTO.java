@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98d9fb9d3d718481abaaf2c464a17f41c04f3b478ad176d69419d3dd62868a99
-size 690
+package odd.client.common.user.dto.response;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Schema(description = "로그인 결과 DTO")
+public class LoginResponseDTO {
+
+    @Schema(description = "성공 여부")
+    private boolean success;
+
+    @Schema(description = "JWT 액세스 토큰")
+    private String accessToken;
+
+    @Schema(description = "JWT 리프레시 토큰")
+    private String refreshToken;
+
+    @Schema(description = "메시지")
+    private String message;
+
+    @Schema(description = "사용자 ID")
+    private Long userId;
+}
+

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91ff5c06b1cdf7376d91aa33f100abc80c03229a7bacc2adbf4f83ede8a9fec3
-size 762
+package odd.client.common.purchase.dto.response;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import java.time.LocalDateTime;
+import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
+import odd.client.common.purchase.dto.PurchaseLogDTO;
+
+@Getter
+@Setter
+@Schema(description = "Purchase Log 상세 응답 DTO")
+public class PurchaseLogDetailResponseDTO extends PurchaseLogDTO {
+
+    @Schema(description = "구매 상품 목록")
+    private List<PurchaseItemResponseDTO> items;
+
+    public PurchaseLogDetailResponseDTO(Long purchaseId, String platform, String serviceType, Integer totalPrice,
+                                        LocalDateTime purchaseDate) {
+        super(purchaseId, platform, serviceType, totalPrice, purchaseDate);
+    }
+}

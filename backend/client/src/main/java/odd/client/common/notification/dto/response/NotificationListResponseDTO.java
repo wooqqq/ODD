@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34be1720bacad2f76ded39ff84c5882c69dc9482890c09b7ac51dced91bfc82d
-size 549
+package odd.client.common.notification.dto.response;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@Schema(description = "로그인 결과 DTO")
+public class NotificationListResponseDTO {
+
+    @Schema(description = "성공 여부")
+    private boolean success;
+
+    @Schema(description = "메시지")
+    private String message;
+
+    @Schema(description = "알림 리스트")
+    private List<NotificationResponseDTO> notificationList;
+}

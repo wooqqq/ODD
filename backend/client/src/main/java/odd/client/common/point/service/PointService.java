@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e564c5a1a5c01f3dc395a221ad159a5b78e854839d4822dc438b2da7023e77e
-size 721
+package odd.client.common.point.service;
+
+import odd.client.common.user.repository.UserRepository;
+import odd.client.common.user.model.User;
+import org.springframework.stereotype.Service;
+
+@Service
+public class PointService {
+
+    private final UserRepository userRepository;
+
+    public PointService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public Long getTotalPoints(Long userId) {
+        System.out.println("Fetching total points for userId: " + userId);
+        Long points = userRepository.findById(userId)
+                .map(User::getPoints)
+                .orElse(0L);
+        System.out.println("Total points found: " + points);
+        return points;
+    }
+}

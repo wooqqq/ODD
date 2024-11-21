@@ -1,3 +1,71 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0eb32ce456524b1a309da41a4fc684100afd3c100c44da6fbdca1b6bfd3182b5
-size 1175
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+.login-box {
+  width: 400px;
+  padding: 100px 60px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: "Dungguun";
+  color: var(--accent);
+  /* margin-bottom: 8px; */
+  height: 150px;
+}
+
+.title {
+  font-size: 25px;
+  font-family: "Dungguun";
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: 1px solid var(--grey);
+  border-radius: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 50px;
+}
+
+.login-button:hover {
+  background-color: var(--click);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+}

@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32f886dc58eb33938f79b2375ca640f1d45a5f827655c74cf6de96d9003127c1
-size 1063
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    compileSdkVersion 34  // 컴파일 SDK 버전을 34로 설정합니다.
+
+    defaultConfig {
+        applicationId "com.dangoal25.odd"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 34  // 타겟 SDK 버전을 34로 설정합니다.
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation platform('com.google.firebase:firebase-bom:29.0.2')
+    implementation 'com.google.firebase:firebase-analytics'
+}
+
+apply plugin: 'com.google.gms.google-services'
