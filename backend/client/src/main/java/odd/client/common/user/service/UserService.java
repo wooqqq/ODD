@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:890c1ee4291350f4ecc37da3a5c7f053b04f169fb412a0f0ecaa994fe0a8b2d9
-size 701
+package odd.client.common.user.service;
+
+import odd.client.common.user.model.User;
+import odd.client.common.user.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+    private final UserRepository userRepository;
+
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public String getUserName(Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("사용자를 찾을 수 없습니다."));
+        return user.getNickname();
+    }
+}

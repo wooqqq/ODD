@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:087fd4de71e170f8e689115e0ba4bfbed49d4720890cbfa1aaeea46d2e93718f
-size 1160
+/* 공통 컨테이너 스타일 */
+.log-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 드롭다운과 테이블 사이 간격 */
+}
+
+/* 공통 테이블 컨테이너 스타일 */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 400px;
+  min-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* 공통 테이블 스타일 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table td {
+  color: #333;
+}
+
+/* 스크롤바 스타일 */
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: var(--lightgrey);
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--middlegrey);
+}

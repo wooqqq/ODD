@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56dd5870b1964e93a35ef47bd2f0901960b48523683a734a5d00410a727ec256
-size 560
+import axios from "axios";
+
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+
+export const CategoryCount = async (platform) => {
+  try {
+    const response = await axios.get(
+      `${BASE_URL}/dashboard/item/categories/stats`,
+      {
+        params: {
+          data: "odd",
+          platform: platform,
+          category: "전체",
+        },
+      }
+    );
+
+    console.log("카테고리 데이터 요청 성공", response.data);
+    return response.data;
+  } catch (e) {
+    console.error("카테고리 데이터 요청 오류", e);
+    throw e;
+  }
+};

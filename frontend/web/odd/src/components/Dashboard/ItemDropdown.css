@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:309036d41a6ff9f919560e65c535b1f93d9f2d99b7d9c9475a55bd7ba1bbaeca
-size 1617
+/* 드롭다운 컨테이너: 부모 너비에 꽉 맞춤 */
+.item-dropdown-container {
+  display: flex;
+  justify-content: flex-end; /* 드롭다운 버튼 오른쪽 정렬 */
+  width: 100%; /* 부모 너비에 맞춤 */
+  box-sizing: border-box; /* 패딩을 포함하여 크기 계산 */
+}
+
+/* 드롭다운 */
+.item-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 90px; /* 드롭다운 버튼 고정 너비 */
+  height: 35px; /* 드롭다운 버튼 고정 높이 */
+  z-index: 2;
+}
+
+/* 드롭다운 버튼 스타일 */
+.item-dropdown-toggle {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--grey);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 텍스트와 화살표 간격 유지 */
+  width: 100%; /* 부모 드롭다운 너비에 맞춤 */
+  height: 100%; /* 부모 드롭다운 높이에 맞춤 */
+  box-sizing: border-box;
+}
+
+/* 화살표 스타일 */
+.arrow {
+  margin-left: 5px;
+  font-size: 10px;
+  color: var(--grey);
+}
+
+/* 드롭다운 메뉴 */
+.item-dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  width: 130px; /* 드롭다운 메뉴 너비를 버튼과 동일하게 */
+  list-style-type: none;
+}
+
+/* 드롭다운 메뉴 항목 */
+.item-dropdown-item {
+  padding: 10px;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.item-dropdown-item:hover {
+  background-color: var(--lightgrey);
+  border-radius: 8px;
+}

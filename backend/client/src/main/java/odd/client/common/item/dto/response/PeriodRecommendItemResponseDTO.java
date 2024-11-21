@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e408c761bc914bf559405bdef7f75d9dc6e09bf22d1b64ed50ff2c9827fb481
-size 601
+package odd.client.common.item.dto.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import java.util.List;
+
+@Getter
+@Setter
+@ToString
+public class PeriodRecommendItemResponseDTO {
+
+    @JsonProperty("user_id")
+    private String userId;
+
+    @JsonProperty("item_id")
+    private String itemId;
+
+    @JsonProperty("item_name")
+    private String itemName;
+
+    @JsonProperty("recommendation_date")
+    private String recommendationDate;
+
+    @JsonProperty("purchase_dates")
+    private List<String> purchaseDates;
+
+}

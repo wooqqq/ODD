@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:783d58043237f6931a793c0b7bf47ab4cfb9d2bca83934ddee6621c7139bd4be
-size 788
+package odd.client.common.search.dto.response;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Schema(description = "Elasticsearch Item 응답 DTO")
+public class ElasticsearchItemResponseDTO {
+
+    @Schema(description = "상품 ID")
+    private String itemId;
+
+    @Schema(description = "상품명")
+    private String itemName;
+
+    @Schema(description = "플랫폼명")
+    private String platform;
+
+    @Schema(description = "서비스 타입")
+    private List<String> serviceType;
+
+    @Schema(description = "가격")
+    private Integer price;
+
+    @Schema(description = "상품 사진 URL")
+    private String s3url;
+}

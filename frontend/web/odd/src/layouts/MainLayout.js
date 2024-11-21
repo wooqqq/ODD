@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63e76bd7451caad94b984a3139221492f84486bdcff31b74411e24dd00b1d5e1
-size 522
+import { Outlet } from "react-router-dom";
+import dashboardStore from "../stores/dashboardStore";
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
+import "./MainLayout.css";
+
+const MainLayout = () => {
+  const { selectedMenu } = dashboardStore();
+
+  return (
+    <div className="layout">
+      <Sidebar setSelectedMenu={selectedMenu} />
+      <Header title={selectedMenu} />
+      <div className="main">
+        <Outlet />
+      </div>
+    </div>
+  );
+};
+
+export default MainLayout;

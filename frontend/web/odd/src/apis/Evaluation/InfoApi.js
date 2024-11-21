@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c491e847296bb2b312699a60599782620707fee79f8b92492dd1bdc07c5e1021
-size 570
+import axios from "axios";
+import useUserStore from "../../stores/userStore";
+
+const baseUrl = process.env.REACT_APP_BASE_URL;
+
+export const fetchUserInfo = async (userId) => {
+  try {
+    const response = await axios.get(`${baseUrl}/evaluation/${userId}`);
+
+    console.log("사용자 정보 받아오기 성공! ! :", response.data);
+
+    const { setNickname } = useUserStore.getState();
+    setNickname(response.data.nickname);
+
+    return response.data;
+  } catch (error) {
+    console.error("사용자 정보 받아오기 실패 :", error);
+    return null;
+  }
+};

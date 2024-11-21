@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1458501b5cc6fda32f621d799bc447e4cf8745c9c6c723a9dd66e25105235455
-size 1189
+package odd.client.common.notification.service;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import java.io.IOException;
+import java.io.InputStream;
+
+@Slf4j
+@Component
+public class FcmInitializer {
+
+    @Value("${fcm.key.path}")
+    private String googleApplicationCredentials;
+
+    @PostConstruct
+    public void initialize() throws IOException {
+        ClassPathResource resource = new ClassPathResource(googleApplicationCredentials);
+
+        try (InputStream is = resource.getInputStream()) {
+            FirebaseOptions options = FirebaseOptions.builder()
+                    .setCredentials(GoogleCredentials.fromStream(is))
+                    .build();
+
+            if (FirebaseApp.getApps().isEmpty()) {
+                FirebaseApp.initializeApp(options);
+                log.info("FirebaseApp initialization complete");
+            }
+        }
+    }
+
+}
