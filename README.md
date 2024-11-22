@@ -19,7 +19,7 @@
 <div>
 
 
-## 프로젝트 개요
+## 🎈 프로젝트 개요
 
 우리동네단골은 재구매 기반 추천 알고리즘 앱 및 관리를 위한 대시보드 서비스입니다.  
 
@@ -47,7 +47,7 @@
 
 
 
-## 주요 기능
+## 📌 주요 기능
 
 - **시간대 기반 재구매 추천 알고리즘**  
 : 사용자가 각 시간대별로 90일 이내에 3회 이상 구매 행동을 보인 시간대를 찾아 적합한 상품을 추천하는 알고리즘  
@@ -67,7 +67,7 @@
 
 <br/>
 
-## 기술 고도화
+## 🛠 기술 고도화
 
 - **Elasticsearch**
 
@@ -80,7 +80,7 @@
 
 <br/>
 
-## 우리동네단골 APP
+## 📞 우리동네단골 APP
   
   : 사용자의 편리함을 극대화 시키는 UI/UX 구상
 
@@ -98,7 +98,7 @@
 
 <br/>
 
-## 관리자 대시보드 WEB
+## 📊 관리자 대시보드 WEB
 
 **[ 로그인 페이지 ]**  
 
@@ -119,7 +119,7 @@
 <br/>
 
 
-## System Architecture
+## 🐳 System Architecture
 
 ![system_architecture](https://github.com/user-attachments/assets/cacdc90c-d0d7-4c5f-8281-c0d89e65cfa5)
 
@@ -177,9 +177,41 @@
 
 <div>
 <table>
+    <tr>
+        <td align="center">
+        <a href="https://github.com/sommnee">
+          <img src="https://avatars.githubusercontent.com/sommnee" width="120px;" alt="wooqqq">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/wooqqq">
+          <img src="https://avatars.githubusercontent.com/wooqqq" width="120px;" alt="Basaeng">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/player397">
+          <img src="https://avatars.githubusercontent.com/player397" width="120px;" alt="jiwon718">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/seungminleeee">
+          <img src="https://avatars.githubusercontent.com/seungminleeee" width="120px;" alt="KBG1">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/JinAyeong">
+          <img src="https://avatars.githubusercontent.com/JinAyeong" width="120px;" alt="taessong">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/chajoyhoi">
+          <img src="https://avatars.githubusercontent.com/chajoyhoi" width="120px;" alt="hhsssu">
+        </a>
+      </td>
+  </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/">
+      <a href="https://github.com/sommnee">
         이소민
       </a>
     </td>
@@ -189,22 +221,22 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
+      <a href="https://github.com/player397">
         최승탁
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
+      <a href="https://github.com/seungminleeee">
         이승민
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
+      <a href="https://github.com/JinAyeong">
         진아영
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
+      <a href="https://github.com/chajoyhoi">
         차유림
       </a>
     </td>
